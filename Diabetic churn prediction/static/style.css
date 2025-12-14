@@ -1,0 +1,127 @@
+/* Basic styling for the page */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+h2 {
+    color: #34495e;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Form styling */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #fdfdfd;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Button styling */
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 30px;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+button[type="submit"]:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+/* Result box styling */
+.result-box {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #ecf0f1;
+}
+
+/* Dynamic styles for the result */
+.result-diabetes {
+    background-color: #ffe8e8;
+    border: 1px solid #e74c3c;
+    color: #e74c3c;
+}
+.result-no-diabetes {
+    background-color: #e8f5e9;
+    border: 1px solid #2ecc71;
+    color: #27ae60;
+}
+.result-diabetes h3, .result-no-diabetes h3 {
+    margin: 0;
+    color: inherit;
+}
+.loading {
+    color: #7f8c8d;
+}
+.error {
+    color: #e74c3c;
+    font-weight: 600;
+}
