@@ -1,0 +1,29 @@
+{
+    "X_columns": [
+        "age",
+        "physical_activity_minutes_per_week",
+        "diet_score",
+        "family_history_diabetes",
+        "hypertension_history",
+        "cardiovascular_history",
+        "bmi",
+        "systolic_bp",
+        "diastolic_bp",
+        "heart_rate",
+        "hdl_cholesterol",
+        "ldl_cholesterol",
+        "triglycerides",
+        "glucose_fasting",
+        "insulin_level",
+        "hba1c",
+        "diabetes_risk_score"
+    ],
+    "X_train_shape": [
+        75000,
+        17
+    ],
+    "X_test_shape": [
+        25000,
+        17
+    ]
+}
