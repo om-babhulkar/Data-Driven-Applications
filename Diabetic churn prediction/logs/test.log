@@ -1,0 +1,24 @@
+2025-11-11 22:46:47,284 - test - INFO - ========== Model Evaluation Pipeline Started ==========
+2025-11-11 22:46:47,320 - test - INFO - Loaded test data from: D:\diabeties_churmn_prediction\models\data_splits.joblib
+2025-11-11 22:46:47,430 - test - INFO - Successfully loaded model from: D:\diabeties_churmn_prediction\models\ann_model_20251111_224647.keras
+2025-11-11 22:46:48,148 - test - INFO - ========== Test Set Evaluation Results ==========
+2025-11-11 22:46:48,148 - test - INFO - 
+Accuracy: 0.9162
+2025-11-11 22:46:48,148 - test - INFO - ROC-AUC: 0.9425
+2025-11-11 22:46:48,148 - test - INFO - 
+Confusion Matrix:
+[[ 9905    96]
+ [ 2000 12999]]
+2025-11-11 22:46:48,148 - test - INFO - 
+Classification Report:
+              precision    recall  f1-score   support
+
+ No Diabetes       0.83      0.99      0.90     10001
+    Diabetes       0.99      0.87      0.93     14999
+
+    accuracy                           0.92     25000
+   macro avg       0.91      0.93      0.91     25000
+weighted avg       0.93      0.92      0.92     25000
+
+2025-11-11 22:46:48,161 - test - INFO - =================================================
+2025-11-11 22:46:48,161 - test - INFO - ========== Model Evaluation Pipeline Completed ==========

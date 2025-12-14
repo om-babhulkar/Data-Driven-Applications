@@ -1,0 +1,19 @@
+2025-11-11 22:47:11,302 - app - INFO - Initializing Flask app and loading artifacts...
+2025-11-11 22:47:11,429 - app - INFO - Loaded model: D:\diabeties_churmn_prediction\models\ann_model_20251111_224647.keras
+2025-11-11 22:47:11,455 - app - INFO - All artifacts (model, scaler, ohe, column lists) loaded successfully.
+2025-11-11 22:47:16,568 - app - INFO - Initializing Flask app and loading artifacts...
+2025-11-11 22:47:16,705 - app - INFO - Loaded model: D:\diabeties_churmn_prediction\models\ann_model_20251111_224647.keras
+2025-11-11 22:47:16,725 - app - INFO - All artifacts (model, scaler, ohe, column lists) loaded successfully.
+2025-11-11 22:47:25,119 - app - INFO - Serving index.html
+2025-12-14 23:35:04,127 - app - INFO - Initializing Flask app and loading artifacts...
+2025-12-14 23:35:04,346 - app - INFO - Loaded model: D:\diabeties_churmn_prediction\models\ann_model_20251111_224647.keras
+2025-12-14 23:35:04,494 - app - INFO - All artifacts (model, scaler, ohe, column lists) loaded successfully.
+2025-12-14 23:35:14,043 - app - INFO - Initializing Flask app and loading artifacts...
+2025-12-14 23:35:14,317 - app - INFO - Loaded model: D:\diabeties_churmn_prediction\models\ann_model_20251111_224647.keras
+2025-12-14 23:35:14,385 - app - INFO - All artifacts (model, scaler, ohe, column lists) loaded successfully.
+2025-12-14 23:35:14,554 - app - INFO - Serving index.html
+2025-12-14 23:35:18,190 - app - INFO - Received prediction request: {'age': 58, 'gender': None, 'ethnicity': None, 'smoking_status': None, 'alcohol_consumption_per_week': 0, 'physical_activity_minutes_per_week': 215, 'diet_score': 5.7, 'sleep_hours_per_day': 7.9, 'screen_time_hours_per_day': 7.9, 'family_history_diabetes': 0, 'hypertension_history': 0, 'cardiovascular_history': 0, 'bmi': 30.5, 'waist_to_hip_ratio': 0.89, 'systolic_bp': 134, 'diastolic_bp': 78, 'heart_rate': 68, 'cholesterol_total': 239, 'hdl_cholesterol': 41, 'ldl_cholesterol': 160, 'triglycerides': 145, 'glucose_fasting': 136, 'glucose_postprandial': 236, 'insulin_level': 6.36, 'hba1c': 8.18, 'diabetes_risk_score': 29.6}
+2025-12-14 23:35:18,986 - app - INFO - Prediction successful: {'prediction': 'Diabetes', 'prediction_class': 1, 'probability': 1.0}
+2025-12-14 23:40:29,837 - app - INFO - Initializing Flask app and loading artifacts...
+2025-12-14 23:40:30,029 - app - INFO - Loaded model: D:\diabeties_churmn_prediction\models\ann_model_20251111_224647.keras
+2025-12-14 23:40:30,084 - app - INFO - All artifacts (model, scaler, ohe, column lists) loaded successfully.

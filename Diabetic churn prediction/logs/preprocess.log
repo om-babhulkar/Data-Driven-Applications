@@ -1,0 +1,11 @@
+2025-11-11 22:45:30,589 - preprocess - INFO - Dataset loaded successfully from D:\diabeties_churmn_prediction\dataset\diabetes_dataset.csv: 100000 rows × 31 columns
+2025-11-11 22:45:30,634 - preprocess - INFO - Dropped columns: ['education_level', 'income_level', 'employment_status', 'diabetes_stage']
+2025-11-11 22:45:30,689 - preprocess - INFO - Identified 3 categorical and 23 numeric columns.
+2025-11-11 22:45:30,699 - preprocess - INFO - Saved categorical and numerical column lists for API.
+2025-11-11 22:45:30,900 - preprocess - INFO - OneHotEncoder applied and saved.
+2025-11-11 22:45:31,619 - preprocess - INFO - Dropped low-correlation columns: ['alcohol_consumption_per_week', 'sleep_hours_per_day', 'screen_time_hours_per_day', 'gender_Female', 'gender_Male', 'gender_Other', 'ethnicity_Asian', 'ethnicity_Black', 'ethnicity_Hispanic', 'ethnicity_Other', 'ethnicity_White', 'smoking_status_Current', 'smoking_status_Former', 'smoking_status_Never']
+2025-11-11 22:45:31,872 - preprocess - INFO - Dropped multicollinear columns: ['cholesterol_total', 'glucose_postprandial', 'waist_to_hip_ratio']
+2025-11-11 22:45:31,995 - preprocess - INFO - Data split into train/test sets.
+2025-11-11 22:45:32,135 - preprocess - INFO - StandardScaler applied and saved.
+2025-11-11 22:45:32,726 - preprocess - INFO - Processed data splits saved successfully (joblib). Train shape: (75000, 17)
+2025-11-11 22:45:32,733 - preprocess - INFO - JSON summary saved successfully at D:\diabeties_churmn_prediction\models\preprocessed_data_summary.json

@@ -1,0 +1,36 @@
+2025-11-11 22:45:30,695 - helper - INFO - Artifact saved successfully to: D:\diabeties_churmn_prediction\models\categorical_columns.joblib
+2025-11-11 22:45:30,699 - helper - INFO - Artifact saved successfully to: D:\diabeties_churmn_prediction\models\numerical_columns.joblib
+2025-11-11 22:45:30,900 - helper - INFO - Artifact saved successfully to: D:\diabeties_churmn_prediction\models\onehot_encoder.joblib
+2025-11-11 22:45:32,131 - helper - INFO - Artifact saved successfully to: D:\diabeties_churmn_prediction\models\scaler.joblib
+2025-11-11 22:45:32,726 - helper - INFO - Artifact saved successfully to: D:\diabeties_churmn_prediction\models\data_splits.joblib
+2025-11-11 22:45:32,726 - helper - INFO - JSON report saved successfully to: D:\diabeties_churmn_prediction\models\preprocessed_data_summary.json
+2025-11-11 22:45:32,909 - helper - INFO - Artifact loaded successfully from: D:\diabeties_churmn_prediction\models\data_splits.joblib
+2025-11-11 22:46:47,279 - helper - INFO - Artifact saved successfully to: D:\diabeties_churmn_prediction\models\history_20251111_224647.joblib
+2025-11-11 22:46:47,283 - helper - INFO - Artifact saved successfully to: D:\diabeties_churmn_prediction\models\metrics_20251111_224647.joblib
+2025-11-11 22:46:47,320 - helper - INFO - Artifact loaded successfully from: D:\diabeties_churmn_prediction\models\data_splits.joblib
+2025-11-11 22:46:47,320 - helper - INFO - Found latest file: D:\diabeties_churmn_prediction\models\ann_model_20251111_224647.keras
+2025-11-11 22:47:11,302 - helper - INFO - Found latest file: D:\diabeties_churmn_prediction\models\ann_model_20251111_224647.keras
+2025-11-11 22:47:11,450 - helper - INFO - Artifact loaded successfully from: D:\diabeties_churmn_prediction\models\scaler.joblib
+2025-11-11 22:47:11,450 - helper - INFO - Artifact loaded successfully from: D:\diabeties_churmn_prediction\models\onehot_encoder.joblib
+2025-11-11 22:47:11,450 - helper - INFO - Artifact loaded successfully from: D:\diabeties_churmn_prediction\models\categorical_columns.joblib
+2025-11-11 22:47:11,455 - helper - INFO - Artifact loaded successfully from: D:\diabeties_churmn_prediction\models\numerical_columns.joblib
+2025-11-11 22:47:16,568 - helper - INFO - Found latest file: D:\diabeties_churmn_prediction\models\ann_model_20251111_224647.keras
+2025-11-11 22:47:16,717 - helper - INFO - Artifact loaded successfully from: D:\diabeties_churmn_prediction\models\scaler.joblib
+2025-11-11 22:47:16,717 - helper - INFO - Artifact loaded successfully from: D:\diabeties_churmn_prediction\models\onehot_encoder.joblib
+2025-11-11 22:47:16,717 - helper - INFO - Artifact loaded successfully from: D:\diabeties_churmn_prediction\models\categorical_columns.joblib
+2025-11-11 22:47:16,725 - helper - INFO - Artifact loaded successfully from: D:\diabeties_churmn_prediction\models\numerical_columns.joblib
+2025-12-14 23:35:04,127 - helper - INFO - Found latest file: D:\diabeties_churmn_prediction\models\ann_model_20251111_224647.keras
+2025-12-14 23:35:04,446 - helper - INFO - Artifact loaded successfully from: D:\diabeties_churmn_prediction\models\scaler.joblib
+2025-12-14 23:35:04,457 - helper - INFO - Artifact loaded successfully from: D:\diabeties_churmn_prediction\models\onehot_encoder.joblib
+2025-12-14 23:35:04,473 - helper - INFO - Artifact loaded successfully from: D:\diabeties_churmn_prediction\models\categorical_columns.joblib
+2025-12-14 23:35:04,484 - helper - INFO - Artifact loaded successfully from: D:\diabeties_churmn_prediction\models\numerical_columns.joblib
+2025-12-14 23:35:14,044 - helper - INFO - Found latest file: D:\diabeties_churmn_prediction\models\ann_model_20251111_224647.keras
+2025-12-14 23:35:14,374 - helper - INFO - Artifact loaded successfully from: D:\diabeties_churmn_prediction\models\scaler.joblib
+2025-12-14 23:35:14,380 - helper - INFO - Artifact loaded successfully from: D:\diabeties_churmn_prediction\models\onehot_encoder.joblib
+2025-12-14 23:35:14,380 - helper - INFO - Artifact loaded successfully from: D:\diabeties_churmn_prediction\models\categorical_columns.joblib
+2025-12-14 23:35:14,385 - helper - INFO - Artifact loaded successfully from: D:\diabeties_churmn_prediction\models\numerical_columns.joblib
+2025-12-14 23:40:29,838 - helper - INFO - Found latest file: D:\diabeties_churmn_prediction\models\ann_model_20251111_224647.keras
+2025-12-14 23:40:30,082 - helper - INFO - Artifact loaded successfully from: D:\diabeties_churmn_prediction\models\scaler.joblib
+2025-12-14 23:40:30,083 - helper - INFO - Artifact loaded successfully from: D:\diabeties_churmn_prediction\models\onehot_encoder.joblib
+2025-12-14 23:40:30,084 - helper - INFO - Artifact loaded successfully from: D:\diabeties_churmn_prediction\models\categorical_columns.joblib
+2025-12-14 23:40:30,084 - helper - INFO - Artifact loaded successfully from: D:\diabeties_churmn_prediction\models\numerical_columns.joblib

@@ -1,0 +1,14 @@
+2025-11-11 22:45:32,758 - train_model - INFO - ==========  Model Training Pipeline Started ==========
+2025-11-11 22:45:32,909 - train_model - INFO -  Loaded processed data splits from: D:\diabeties_churmn_prediction\models\data_splits.joblib
+2025-11-11 22:45:33,265 - train_model - INFO -  Model compiled successfully.
+2025-11-11 22:46:46,395 - train_model - INFO - Model training completed successfully.
+2025-11-11 22:46:47,253 - train_model - INFO - Accuracy: 0.9162
+2025-11-11 22:46:47,253 - train_model - INFO - ROC-AUC: 0.9425
+2025-11-11 22:46:47,253 - train_model - INFO - Confusion Matrix:
+[[ 9905    96]
+ [ 2000 12999]]
+2025-11-11 22:46:47,279 - train_model - INFO - Model saved at: D:\diabeties_churmn_prediction\models\ann_model_20251111_224647.keras
+2025-11-11 22:46:47,279 - train_model - INFO - Training history saved at: D:\diabeties_churmn_prediction\models\history_20251111_224647.joblib
+2025-11-11 22:46:47,283 - train_model - INFO - Metrics saved at: D:\diabeties_churmn_prediction\models\metrics_20251111_224647.joblib
+2025-11-11 22:46:47,283 - train_model - INFO - All artifacts saved successfully.
+2025-11-11 22:46:47,283 - train_model - INFO - ========== Model Training Pipeline Completed Successfully ==========

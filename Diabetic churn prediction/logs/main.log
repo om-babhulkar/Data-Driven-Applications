@@ -1,0 +1,13 @@
+2025-11-11 22:45:30,000 - main - INFO - ==========  STARTING FULL PIPELINE  ==========
+2025-11-11 22:45:30,000 - main - INFO - --- Starting Step 1: Data Preprocessing ---
+2025-11-11 22:45:32,755 - main - INFO - --- Completed Step 1: Data Preprocessing ---
+2025-11-11 22:45:32,758 - main - INFO - --- Starting Step 2: Model Training ---
+2025-11-11 22:46:47,284 - main - INFO - --- Completed Step 2: Model Training ---
+2025-11-11 22:46:47,284 - main - INFO - --- Starting Step 3: Model Evaluation ---
+2025-11-11 22:46:48,161 - main - INFO - --- Completed Step 3: Model Evaluation ---
+2025-11-11 22:46:48,161 - main - INFO - 
+==========  FULL PIPELINE COMPLETED SUCCESSFULLY  ==========
+2025-11-11 22:46:48,161 - main - INFO - Model Path: D:\diabeties_churmn_prediction\models\ann_model_20251111_224647.keras
+2025-11-11 22:46:48,161 - main - INFO - Final Test Set Metrics (from test.py):
+2025-11-11 22:46:48,161 - main - INFO -   Accuracy: 0.9162
+2025-11-11 22:46:48,161 - main - INFO -   ROC-AUC: 0.9425
