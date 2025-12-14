@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Diabetes Prediction Model</h1>
+        <p>Enter patient data to receive a prediction.</p>
+        
+        <form id="prediction-form">
+            <h2>Patient Information</h2>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" value="58" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="ethnicity">Ethnicity</label>
+                    <select id="ethnicity" name="ethnicity">
+                        <option value="Asian">Asian</option>
+                        <option value="White">White</option>
+                        <option value="Hispanic">Hispanic</option>
+                        <option value="Black">Black</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="smoking_status">Smoking Status</label>
+                    <select id="smoking_status" name="smoking_status">
+                        <option value="Never">Never</option>
+                        <option value="Former">Former</option>
+                        <option value="Current">Current</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="alcohol_consumption_per_week">Alcohol (per week)</label>
+                    <input type="number" step="0.1" id="alcohol_consumption_per_week" name="alcohol_consumption_per_week" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="physical_activity_minutes_per_week">Physical Activity (mins/wk)</label>
+                    <input type="number" id="physical_activity_minutes_per_week" name="physical_activity_minutes_per_week" value="215">
+                </div>
+                <div class="form-group">
+                    <label for="diet_score">Diet Score</label>
+                    <input type="number" step="0.1" id="diet_score" name="diet_score" value="5.7">
+                </div>
+                <div class="form-group">
+                    <label for="sleep_hours_per_day">Sleep (hrs/day)</label>
+                    <input type="number" step="0.1" id="sleep_hours_per_day" name="sleep_hours_per_day" value="7.9">
+                </div>
+                <div class="form-group">
+                    <label for="screen_time_hours_per_day">Screen Time (hrs/day)</label>
+                    <input type="number" step="0.1" id="screen_time_hours_per_day" name="screen_time_hours_per_day" value="7.9">
+                </div>
+
+                <div class="form-group">
+                    <label for="family_history_diabetes">Family History (Diabetes)</label>
+                    <select id="family_history_diabetes" name="family_history_diabetes">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="hypertension_history">Hypertension History</label>
+                    <select id="hypertension_history" name="hypertension_history">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cardiovascular_history">Cardiovascular History</label>
+                    <select id="cardiovascular_history" name="cardiovascular_history">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="bmi">BMI</label>
+                    <input type="number" step="0.1" id="bmi" name="bmi" value="30.5" required>
+                </div>
+                <div class="form-group">
+                    <label for="waist_to_hip_ratio">Waist-to-Hip Ratio</label>
+                    <input type="number" step="0.01" id="waist_to_hip_ratio" name="waist_to_hip_ratio" value="0.89">
+                </div>
+                <div class="form-group">
+                    <label for="systolic_bp">Systolic BP</label>
+                    <input type="number" id="systolic_bp" name="systolic_bp" value="134">
+                </div>
+                <div class="form-group">
+                    <label for="diastolic_bp">Diastolic BP</label>
+                    <input type="number" id="diastolic_bp" name="diastolic_bp" value="78">
+                </div>
+                <div class="form-group">
+                    <label for="heart_rate">Heart Rate</label>
+                    <input type="number" id="heart_rate" name="heart_rate" value="68">
+                </div>
+                
+                <div class="form-group">
+                    <label for="cholesterol_total">Total Cholesterol</label>
+                    <input type="number" id="cholesterol_total" name="cholesterol_total" value="239">
+                </div>
+                <div class="form-group">
+                    <label for="hdl_cholesterol">HDL Cholesterol</label>
+                    <input type="number" id="hdl_ cholesterol" name="hdl_cholesterol" value="41">
+                </div>
+                <div class="form-group">
+                    <label for="ldl_cholesterol">LDL Cholesterol</label>
+                    <input type="number" id="ldl_cholesterol" name="ldl_cholesterol" value="160">
+                </div>
+                <div class="form-group">
+                    <label for="triglycerides">Triglycerides</label>
+                    <input type="number" id="triglycerides" name="triglycerides" value="145">
+                </div>
+                <div class="form-group">
+                    <label for="glucose_fasting">Glucose (Fasting)</label>
+                    <input type="number" id="glucose_fasting" name="glucose_fasting" value="136">
+                </div>
+                <div class="form-group">
+                    <label for="glucose_postprandial">Glucose (Postprandial)</label>
+                    <input type="number" id="glucose_postprandial" name="glucose_postprandial" value="236">
+                </div>
+                <div class="form-group">
+                    <label for="insulin_level">Insulin Level</label>
+                    <input type="number" step="0.01" id="insulin_level" name="insulin_level" value="6.36">
+                </div>
+                <div class="form-group">
+                    <label for="hba1c">HbA1c</label>
+                    <input type="number" step="0.01" id="hba1c" name="hba1c" value="8.18" required>
+                </div>
+                <div class="form-group">
+                    <label for="diabetes_risk_score">Diabetes Risk Score</label>
+                    <input type="number" step="0.1" id="diabetes_risk_score" name="diabetes_risk_score" value="29.6">
+                </div>
+            </div>
+
+            <button type="submit" id="submit-button">Predict</button>
+        </form>
+
+        <h2>Prediction Result</h2>
+        <div id="result-container" class="result-box">
+            <p>Click "Predict" to see the result.</p>
+        </div>
+    </div>
+
+    <script>
+        // Wait for the page to load
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('prediction-form');
+            const resultContainer = document.getElementById('result-container');
+            const submitButton = document.getElementById('submit-button');
+
+            // Listen for the form to be submitted
+            form.addEventListener('submit', async (event) => {
+                // Prevent the form from reloading the page
+                event.preventDefault();
+
+                // Show a loading message
+                resultContainer.innerHTML = '<p class="loading">Calculating...</p>';
+                submitButton.disabled = true;
+
+                // 1. Get all data from the form
+                const formData = new FormData(form);
+                const data = {};
+                
+                // 2. Convert form data to a JSON object
+                // This part is crucial: it handles converting numbers and strings
+                formData.forEach((value, key) => {
+                    // Check if a field is a number
+                    const el = document.getElementsByName(key)[0];
+                    if (el.type === 'number' || el.type === 'select-one') {
+                        // Convert empty strings to null (or 0) if needed, but API handles NaNs
+                        data[key] = value === '' ? null : Number(value);
+                    } else {
+                        data[key] = value;
+                    }
+                });
+                
+                // 3. Send the data to the /predict API
+                try {
+                    const response = await fetch('/predict', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(data)
+                    });
+
+                    // 4. Get the result and display it
+                    if (response.ok) {
+                        const result = await response.json();
+                        
+                        // Clear previous class
+                        resultContainer.classList.remove('result-diabetes', 'result-no-diabetes');
+                        
+                        // Format and display
+                        if (result.prediction_class === 1) {
+                            resultContainer.classList.add('result-diabetes');
+                            resultContainer.innerHTML = `
+                                <h3>Result: ${result.prediction}</h3>
+                                <p>The model is <strong>${(result.probability * 100).toFixed(1)}%</strong> confident.</p>
+                            `;
+                        } else {
+                            resultContainer.classList.add('result-no-diabetes');
+                            resultContainer.innerHTML = `
+                                <h3>Result: ${result.prediction}</h3>
+                                <p>The model is <strong>${((1 - result.probability) * 100).toFixed(1)}%</strong> confident (Probability of Diabetes: ${(result.probability * 100).toFixed(1)}%).</p>
+                            `;
+                        }
+                    } else {
+                        // Handle server errors
+                        const error = await response.json();
+                        resultContainer.innerHTML = `<p class="error">Error: ${error.error}. ${error.missing_keys ? 'Missing keys: ' + error.missing_keys.join(', ') : ''}</p>`;
+                    }
+
+                } catch (error) {
+                    // Handle network errors
+                    resultContainer.innerHTML = `<p class="error">Network error. Is the server running?</p>`;
+                } finally {
+                    // Re-enable the button
+                    submitButton.disabled = false;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
